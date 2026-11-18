@@ -1,8 +1,8 @@
 class Wechat2dot < Formula
   desc "Mirror your primary DOT room into your own WeChat"
   homepage "https://github.com/AndreLYL/wechat2dot"
-  url "https://github.com/AndreLYL/wechat2dot/releases/download/v2.0.0a1/wechat2dot-2.0.0a1.tar.gz"
-  sha256 "2d30308222d6afa8a85c37e4f533bcfcc4890f0ed1a96514d2a7168e9d9d7540"
+  url "https://github.com/AndreLYL/wechat2dot/releases/download/v2.0.0a2/wechat2dot-2.0.0a2.tar.gz"
+  sha256 "6b496cc4023cee03be15ab074e64304d0391c8e363e8009344e4cf9c8eec1e98"
   license "MIT"
   depends_on "uv"
   depends_on "python@3.12"
@@ -14,6 +14,6 @@ class Wechat2dot < Formula
   end
 
   test do
-    assert_match "2.0.0a1", shell_output("#{bin}/wechat2dot --version")
+    assert_match "2.0.0a2", shell_output("#{bin}/wechat2dot --version")
   end
 end
